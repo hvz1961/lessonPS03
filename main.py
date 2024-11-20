@@ -2,46 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 from googletrans import Translator
 
-# url = 'http://quotes.toscrape.com/'
-
-# response = requests.get(url)
-# print(response.content) # можно указать .text или .content
-# создаем переменную куда будем сохранять данные
-# html = response.text
-# теперь создаем объект
-# soup = BeautifulSoup(html, 'html.parser')
-# создаем переменную для ссылок с нашего сайта
-# link = soup.find_all('a')
-# # print(link) # при такой команде будет выводится данные не удобно, поэтому поменяем команду
-# for link in link:
-#     print(link.get('href'))
-# при таком формате вывода информации: с помощью атрибута 'href'
-# мы увидим все ссылки, которые есть на сайте.
-
-# Парсинг цитат
-# url = 'http://quotes.toscrape.com/'
-# response = requests.get(url)
-# html = response.text
-
-# soup = BeautifulSoup(html, 'html.parser')
-#Создадим отдельную переменную text, куда будут сохраняться все цитаты
-# text = soup.find_all('span', 'text')
-# print(text)
-#Создадим отдельную переменную author, куда будут сохраняться все авторы
-# author = soup.find_all('small', 'author')
-# print(author)
-#при этом информация будет выводится в виде списка,
-#чтобы инф. была наглядной применяем команду for
-#С помощью функции range(len) определим общее количество цитат
-# for i in range(len(text)):
-#Присвоим номер каждой цитате так, чтобы нумерация шла с 1
-#     print(f'Цитата номер - {i + 1}')
-#Выводим саму цитату, указывая её id
-#     print(text[i].text)
-#Выводим автора цитаты
-#     print(f'Автор цитаты - {author[i].text}\n') #указываем в конце \n
-# для отступа между цитатами
-
 #Создадим мини-игру
 #Создаём функцию, которая будет получать информацию
 
